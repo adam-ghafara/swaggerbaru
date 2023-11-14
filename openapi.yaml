@@ -67,19 +67,16 @@ components:
           properties:
             name:
               type: string
-              example: "LOKASI"
+              example: "CONTOH TEMPAT"
         geometry:
           type: object
           properties:
+            coordinates:
+              type: array 
+              example: [ [107.59169227820036, -6.972928315950369] ]
             type:
               type: string
               example: "Point"
-            coordinates:
-              type: array
-              items:
-                - type: array
-                  items:
-                    - [125.6, 10.1]
   securitySchemes:
     SECRET:
       type: apiKey
